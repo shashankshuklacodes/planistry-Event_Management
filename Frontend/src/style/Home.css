@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.carousel-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  filter: brightness(0.7);
+}
+
+.hero .item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #fff;
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease;
+}
+.hero .item.animate-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero .item h3 {
+  font-family: "Alex Brush", cursive;
+  color: #a2783a;
+  font-weight: 300;
+  font-size: 28px;
+}
+.hero .item div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero .item div h1 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.hero .item div p {
+  color: gray;
+  font-size: 16px;
+}
+.hero .item div .cta-btn {
+  padding: 10px 30px;
+  color: #fff;
+  background: #000;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.hero .item div .cta-btn:hover {
+  background-color: #573aa2;
+  transform: scale(1.01);
+}
+
+@media (max-width: 620px) {
+  .hero {
+    padding: 0 20px;
+  }
+  .hero .item {
+    width: 100%;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+.faq-heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+.faq-heading-o {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #573aa2;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0;
+}
+.faq-question {
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+  font-family: "Montserrat", Sans-serif;
+}
+.faq-icon {
+  font-size: 24px;
+  color: #573aa2;
+}
+.faq-answer {
+  margin-top: 10px;
+  padding-left: 10px;
+  color: #555;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

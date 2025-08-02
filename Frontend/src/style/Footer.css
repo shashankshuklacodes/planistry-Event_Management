@@ -1,0 +1,110 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-title h1 {
+  color: #00bfa6;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.footer-title p {
+  font-size: 40px;
+  color: #ccc;
+}
+
+.footer-description {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 20px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  font-size: 32px;
+  margin: 20px 10px;
+}
+
+.footer-column h6 {
+  font-size: 24px;
+  color: #00bfa6;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #ddd;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover,
+.footer-column p:hover {
+  color: #00bfa6;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bfa6;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

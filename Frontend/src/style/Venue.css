@@ -1,0 +1,138 @@
+.venue-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.venue-hero {
+  height: 80vh;
+  background-image: url('/images/ann1.jpg'); /* Replace with your actual image */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.venue-hero-content {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: black;
+  padding: 40px;
+  max-width: 900px;
+}
+
+.venue-hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.venue-hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Venue Section */
+.venue-list-section {
+  background-color: #f4f4f4;
+  padding: 50px 30px;
+}
+
+.venue-list-section h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.venue-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.venue-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.venue-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.venue-card-details {
+  padding: 35px;
+}
+
+.venue-card-details h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.venue-card-details p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Why Melodia Section */
+.why-melodia-section {
+  padding: 50px 20px;
+  /* background-color: #ffffff; */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.why-melodia-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.why-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.melodia-points {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.melodia-points li {
+  background-color: #f9f9f9;
+  border-left: 5px solid #f39c12;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.melodia-points li:hover {
+  background-color: #b3b2b2;
+}
+.enquiry-button{
+    background-color:#16BF2E;
+    border-radius:15px;
+    height:30px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: none;
+
+}
